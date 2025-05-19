@@ -1,0 +1,1 @@
+{"version":3,"file":"useDetectDevice.d.ts","sourceRoot":"","sources":["../../../../src/hooks/useDetectDevice.ts"],"names":[],"mappings":"AAEA,MAAM,WAAW,gBAAgB;IAC/B,SAAS,EAAE,OAAO,CAAA;IAClB,KAAK,EAAE,OAAO,CAAA;IACd,QAAQ,EAAE,OAAO,CAAA;CAClB;AAgBD,QAAA,MAAM,eAAe,EAAE,gBAItB,CAAA;AAED,OAAO,EAAE,eAAe,EAAE,CAAA"}

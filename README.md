@@ -2,6 +2,14 @@
 
 A private React Native component library by ProBuilt Software for custom components and heavily modified 3rd-party components used across internal projects.
 
+## Building
+
+To build the library, run the following command:
+
+```sh
+yarn  bob build
+```
+
 ## Installation
 
 ```sh
@@ -10,15 +18,13 @@ npm install react-native-probuilt
 
 ## Usage
 
-
 ```js
-import { multiply } from 'react-native-probuilt';
+import { multiply } from "react-native-probuilt"
 
 // ...
 
-const result = await multiply(3, 7);
+const result = await multiply(3, 7)
 ```
-
 
 ## Contributing
 
