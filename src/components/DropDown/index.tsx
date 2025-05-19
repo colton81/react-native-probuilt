@@ -618,7 +618,7 @@ export const DropDown = React.forwardRef<IDropdownRef, DropdownProps<any>>(
               onContentSizeChange={scrollIndex}
               onScrollToIndexFailed={scrollIndex}
               data={listData}
-              inverted={isTopPosition ? inverted : false}
+              // inverted={isTopPosition ? inverted : false}
               renderItem={_renderItem}
               keyExtractor={(_item, index) => index.toString()}
               showsVerticalScrollIndicator={showsVerticalScrollIndicator}
