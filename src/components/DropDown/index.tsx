@@ -606,7 +606,7 @@ export const DropDown = React.forwardRef<IDropdownRef, DropdownProps<any>>(
               keyboardShouldPersistTaps="handled"
               ref={refList}
               initialScrollIndex={
-                scrollToIndex > -1 && listData?.length > 4
+                scrollToIndex > -1 && listData?.length > 5
                   ? scrollToIndex
                   : undefined
               }
