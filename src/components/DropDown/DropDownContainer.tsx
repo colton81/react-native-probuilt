@@ -28,7 +28,6 @@ export const DropDownContainer = forwardRef<any, DropDownContainerProps>(
       props.currentValue && _get(props.currentValue, props.valueField)
     return (
       <Button
-        variant="plain"
         //ref={ref}
         //testID={props.testID}
         //accessible={!!props.accessibilityLabel}
