@@ -442,6 +442,7 @@ export const DropDown = React.forwardRef<IDropdownRef, DropdownProps<any>>(
       const isSelected = currentValue && _get(currentValue, valueField)
       return (
         <Button
+          variant="plain"
           //ref={ref}
           //onLayout={_measure}
           //testID={testID}
