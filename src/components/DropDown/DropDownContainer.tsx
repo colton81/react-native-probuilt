@@ -1,9 +1,14 @@
 /* eslint-disable react-native/no-inline-styles */
 import _get from "lodash/get"
-import { View, Text, I18nManager, type ViewProps } from "react-native"
+import {
+  TouchableOpacity,
+  View,
+  Text,
+  I18nManager,
+  type ViewProps
+} from "react-native"
 import { ChevronDown } from "../../icons/ChevronDown"
 import React, { forwardRef } from "react"
-import { Button } from "@expo/ui/swift-ui"
 type DropDownContainerProps = {
   visible?: boolean
   testID?: string
@@ -23,15 +28,15 @@ type DropDownContainerProps = {
 } & ViewProps
 
 export const DropDownContainer = forwardRef<any, DropDownContainerProps>(
-  (props) => {
+  (props, ref) => {
     const isSelected =
       props.currentValue && _get(props.currentValue, props.valueField)
     return (
-      <Button
-        //ref={ref}
-        //testID={props.testID}
-        //accessible={!!props.accessibilityLabel}
-        //accessibilityLabel={props.accessibilityLabel}
+      <TouchableOpacity
+        ref={ref}
+        testID={props.testID}
+        accessible={!!props.accessibilityLabel}
+        accessibilityLabel={props.accessibilityLabel}
         onPress={props.showOrClose}
       >
         <View
@@ -79,7 +84,7 @@ export const DropDownContainer = forwardRef<any, DropDownContainerProps>(
             <ChevronDown color={props.iconColor} width={20} height={20} />
           )}
         </View>
-      </Button>
+      </TouchableOpacity>
     )
   }
 )
