@@ -454,7 +454,7 @@ export const DropDown = React.forwardRef<IDropdownRef, DropdownProps<any>>(
           }}
           style={[styles.mainWrap, style]}
         >
-          <View ref={ref} style={styles.dropdown} onLayout={_measure}>
+          <View ref={ref} style={styles.dropdown}>
             {renderLeftIcon?.(visible)}
             <Text
               style={[
