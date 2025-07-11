@@ -23,7 +23,6 @@ import {
   Keyboard,
   type KeyboardEvent,
   Modal,
-  Pressable,
   StatusBar,
   StyleSheet,
   Text,
@@ -38,6 +37,7 @@ import { styles } from "./styles"
 import { useDetectDevice } from "../../hooks/useDetectDevice"
 import { useDeviceOrientation } from "../../hooks/useDeviceOrientation"
 import { ChevronDown } from "../../icons/ChevronDown"
+import { Button } from "@expo/ui/swift-ui"
 
 const { isTablet } = useDetectDevice
 
@@ -441,22 +441,19 @@ export const DropDown = React.forwardRef<IDropdownRef, DropdownProps<any>>(
     const _renderDropdown = () => {
       const isSelected = currentValue && _get(currentValue, valueField)
       return (
-        <Pressable
-          ref={ref}
-          onLayout={_measure}
-          testID={testID}
-          accessible={!!accessibilityLabel}
-          accessibilityLabel={accessibilityLabel}
-          onPress={showOrClose}
-          style={({ pressed }) => [
-            styles.mainWrap,
-            {
-              opacity: pressed ? 0.5 : 1
-            },
-            style
-          ]}
+        <Button
+          //ref={ref}
+          //onLayout={_measure}
+          //testID={testID}
+          //accessible={!!accessibilityLabel}
+          //accessibilityLabel={accessibilityLabel}
+          onPress={() => {
+            ref?.current?.measureLayout
+            showOrClose()
+          }}
+          style={[styles.mainWrap, style]}
         >
-          <View style={styles.dropdown}>
+          <View ref={ref} style={styles.dropdown}>
             {renderLeftIcon?.(visible)}
             <Text
               style={[
@@ -481,7 +478,7 @@ export const DropDown = React.forwardRef<IDropdownRef, DropdownProps<any>>(
               />
             )}
           </View>
-        </Pressable>
+        </Button>
       )
     }
 

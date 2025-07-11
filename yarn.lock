@@ -2227,6 +2227,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@expo/ui@npm:^0.1.1-alpha.10":
+  version: 0.1.1-canary-20250709-136b77f
+  resolution: "@expo/ui@npm:0.1.1-canary-20250709-136b77f"
+  peerDependencies:
+    expo: "*"
+    react: "*"
+    react-native: "*"
+  checksum: 7dfef678fc8a38eb7ee7b0664ed622b950bb3ff321ebce6790777a289897c0e7f20ffacf35b4f22d7564f36bd9461cee8163ba77b8f1914fe052404f4e034d71
+  languageName: node
+  linkType: hard
+
 "@expo/vector-icons@npm:^14.0.0":
   version: 14.1.0
   resolution: "@expo/vector-icons@npm:14.1.0"
@@ -11452,6 +11463,7 @@ __metadata:
     "@eslint/eslintrc": ^3.3.0
     "@eslint/js": ^9.22.0
     "@evilmartians/lefthook": ^1.5.0
+    "@expo/ui": ^0.1.1-alpha.10
     "@react-native/babel-preset": 0.78.2
     "@react-native/eslint-config": ^0.78.0
     "@release-it/conventional-changelog": ^9.0.2
